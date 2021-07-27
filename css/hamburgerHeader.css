@@ -1,0 +1,71 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f1e4;
+}
+.hamburger {
+    display: none;
+}
+.hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.hamburger-menu .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.hamburger-menu .overlay .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.hamburger-menu .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.hamburger-menu .overlay a:hover,
+.hamburger-menu .overlay a:focus {
+    color: #f1f1f1;
+}
+.hamburger-menu .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+
+
+@media (max-width: 810px) {
+    .hamburger {
+        display: block;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hamburger-menu .overlay .overlay-content {
+        margin-top: 0;
+    }
+    .hamburger-menu .overlay .closebtn {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,131 @@
+.contact .contact_form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .contact_form input {
+    margin-bottom: 10px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    width: 300px;
+}
+.contact .contact_form .contact_info {
+    /* margin-left: 50px; */
+    width: 300px;
+}
+.contact .contact_form .contact_info .contact_body {
+    display: flex;
+}
+.contact .contact_form .contact_info .contact_number,
+.contact .contact_form .contact_info .contact_adress .contact_adress_body,
+.contact .contact_form .contact_info .contact_email .contact_email_body,
+.contact .contact_form .contact_info .contact_networks .contact_networks_body {
+    padding-left: 20px;
+}
+.contact .contact_form .contact_info .contact_adress,
+.contact .contact_form .contact_info .contact_email,
+.contact .contact_form .contact_info .contact_networks {
+    margin-top: 35px;
+}
+.contact .contact_form .contact_info .contact_networks ul {
+    padding-left: 0;
+    margin: 0;
+}
+.contact .contact_form .contact_info .contact_networks ul li {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #f9f1e4;
+}
+.contact .contact_form .contact_info .contact_networks ul li:hover {
+    border: 1px solid #000;
+}
+.contact .contact_form .contact_info p {
+    margin-bottom: 0;
+}
+.contact .contact_form .form_text {
+    margin: 0 30px;
+}
+.contact .contact_form form {
+    text-align: center;
+}
+.contact .contact_form button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    width: 300px;
+    padding: 10px;
+}
+.contact .contact_form button:hover {
+    background-color: transparent;
+    color: #000;
+    transition: 1s;
+}
+.contact .contact_form textarea {
+    width: 300px;
+    background-color: transparent;
+    padding: 10px;
+}
+.contact .contact_form .cont_inform_text {
+    width: 640px;
+    margin: 0 20px;
+}
+.contact .contact_form .cont_inform_text span {
+    font-weight: 700;
+}
+
+.contact .contact_form .cont_inform_text .apartment-map {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+
+
+
+
+@media (max-width: 1404px) {
+    .contact .contact_form .cont_inform_text {
+        margin-top: 30px;
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+}
+
+@media (max-width: 810px) {
+    .contact .contact_form .cont_inform_text {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 709px) {
+    .contact .contact_form .contact_info, 
+    .contact .contact_form .form_text {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 679px) {
+    .contact .contact_main_text  {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+} 
+
+@media (max-width: 639px) {
+    .contact .contact_form .contact_info .contact_body {
+        display: block;
+        text-align: center;
+    }
+    .contact .contact_form .contact_info .contact_number,
+    .contact .contact_form .contact_info .contact_adress .contact_adress_body,
+    .contact .contact_form .contact_info .contact_email .contact_email_body,
+    .contact .contact_form .contact_info .contact_networks .contact_networks_body {
+        padding-left: 0;
+        padding-top: 10px;
+}
+    .contact .contact_form .form_text {
+        margin-top: 30px;
+    }
+} 
